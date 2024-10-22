@@ -48,6 +48,7 @@
 - **Switch between branches**:
   
   `git checkout <branch_name>`
+  `git switch <branch_name>`
 
 - **List all branches**:
   
