@@ -40,7 +40,12 @@
   
   `git commit -m "your commit message"`
 
-## 5. Branching
+## 5. Cloning a Repository
+- **Clone an existing repository**:
+  
+  `git clone <repository_url>`
+
+## 6. Branching
 - **Create a new branch**:
   
   `git checkout -b <branch_name>`
@@ -48,13 +53,26 @@
 - **Switch between branches**:
   
   `git checkout <branch_name>`
+  
   `git switch <branch_name>`
 
 - **List all branches**:
   
   `git branch`
 
-## 6. Logs
+- **Delete a branch locally**:
+  
+  `git branch -d <branch_name>`
+
+- **Force delete a branch locally (if it has unmerged changes)**:
+  
+  `git branch -D <branch_name>`
+
+- **Delete a branch remotely**:
+  
+  `git push origin --delete <branch_name>`
+
+## 7. Logs and Diffs
 - **View commit history**:
   
   `git log`
@@ -63,12 +81,71 @@
   
   `git log --oneline`
 
-## 7. Remove from Staging
+- **View changes between working directory and the index (staging area)**:
+  
+  `git diff`
+
+- **View changes between last commit and the working directory**:
+  
+  `git diff HEAD`
+
+- **Show detailed information about a specific commit**:
+  
+  `git show <commit_id>`
+
+## 8. Resetting and Reverting
 - **Unstage a file (remove from index but keep in working directory)**:
   
   `git rm --cached <filename>`
 
-## 8. Miscellaneous
+- **Reset changes in staging area (move to working directory)**:
+  
+  `git reset <filename>`
+
+- **Reset to a specific commit but keep changes in working directory**:
+  
+  `git reset <commit_id>`
+
+- **Hard reset to a specific commit (discard all changes, both in staging and working directory)**:
+  
+  `git reset --hard <commit_id>`
+
+## 9. Sync with Remote Repository
+- **Push changes to remote repository**:
+  
+  `git push origin <branch_name>`
+
+- **Pull updates from remote repository**:
+  
+  `git pull origin <branch_name>`
+
+- **Merge changes from another branch**:
+  
+  `git merge <branch_name>`
+
+- **Fetch latest updates from remote (does not merge)**:
+  
+  `git fetch origin <branch_name>`
+
+- **Sync a forked repository with the original (upstream)**:
+  
+  1. **Add the upstream remote**:
+     
+     `git remote add upstream <original_repo_url>`
+
+  2. **Fetch the latest changes from upstream**:
+     
+     `git fetch upstream`
+
+  3. **Merge upstream changes into your local fork**:
+     
+     `git merge upstream/<branch_name>`
+
+  4. **Push changes to your fork**:
+     
+     `git push origin <branch_name>`
+
+## 10. Miscellaneous
 - **View all files, including hidden ones**:
   
   `ls -a`
