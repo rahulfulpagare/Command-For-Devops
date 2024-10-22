@@ -13,7 +13,13 @@
 - **Set global email**:
   
   `git config --global user.email "rahulfulpgare@gmail.com"`
+  
+  **Edit global Git configuration**:
+  
+  `git config --global --edit`
 
+  This opens your global Git configuration file (usually `~/.gitconfig`) in your default editor, allowing you to manually edit settings.
+  
 ## 3. File Operations
 - **Create a new file**:
   
