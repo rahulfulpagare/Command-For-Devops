@@ -14,7 +14,7 @@
   
   `git config --global user.email "rahulfulpgare@gmail.com"`
   
-  **Edit global Git configuration**:
+- **Edit global Git configuration**:
   
   `git config --global --edit`
 
