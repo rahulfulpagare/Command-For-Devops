@@ -1,4 +1,6 @@
-Git Commands
+#Git Commands
+
+
 1. Initialization
 Create a new Git repository:
 
